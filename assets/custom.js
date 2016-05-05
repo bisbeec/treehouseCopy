@@ -23,13 +23,6 @@ $(window).scroll(function() {
 });
 
 
-$( "#clickme" ).click(function() {
-  $( "#book" ).fadeOut( "slow", function() {
-    // Animation complete.
-  });
-});
-
-
 $("#hamburger").click(function() {
 	$("#mobileNav").toggleClass("mobileNavShow");
 	$("main").toggleClass("mainPush");
