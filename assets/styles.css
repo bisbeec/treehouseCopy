@@ -304,6 +304,7 @@ main {
 	right: 0;
 	transition: .5s;
 	transition-timing-function: cubic-bezier(0.71, 0.32, 1, 1);
+	transition-delay: .5s;
 }
 
 #hero {
