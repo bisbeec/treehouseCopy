@@ -302,7 +302,7 @@ main {
 	position: relative;
 	top: 80px;
 	right: 0;
-	transition: 1s;
+	transition: .5s;
 	transition-timing-function: cubic-bezier(0.71, 0.32, 1, 1);
 }
 
