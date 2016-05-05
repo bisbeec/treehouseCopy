@@ -270,29 +270,21 @@ ul#mobileNav li:nth-child(2) {
     display: block;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid #5fcf80;
     border-radius: 6px;
-    color: #fff;
+    color: #5fcf80;
     font-size: 13px;
     padding: 5px 0 2px;
     position: relative;
     bottom: 10px;
     font-weight: 300;
-    transition: .3s;
     display: none;
-}
-
-.freeTrialMobileCenterShow {
-	border-color: #5fcf80 !important;
-	color: #5fcf80 !important;
 }
 
 #freeTrialMobileCenter:hover {
 	background-color: #5fcf80;
 	color: #fff !important;
 }
-
-
 
 main {
 	position: relative;
@@ -694,10 +686,6 @@ footer ul#socialIcons li a .fa {
 		display: block;
 	}
 
-	#freeTrialMobileCenter {
-		display: block;
-	}
-
 	.container {
 		width: initial;
 	}
@@ -808,6 +796,6 @@ footer ul#socialIcons li a .fa {
 	}
 
 	#freeTrialMobileCenter {
-		display: none;
+		display: none !important;
 	}
 }
