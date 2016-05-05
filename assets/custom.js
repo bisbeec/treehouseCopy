@@ -24,8 +24,7 @@ $(window).scroll(function() {
 
 
 $("#hamburger").click(function() {
-	$("#mobileNav").toggleClass("mobileNavShow");
-	$("main").toggleClass("mainPush");
+	$("#wrapper").toggleClass("wrapperPush");
 	$("header").toggleClass("headerPush");
     $("#barOne").toggleClass("barOneEffect");
     $("#barTwo").toggleClass("barTwoEffect");

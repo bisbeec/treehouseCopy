@@ -18,6 +18,13 @@ ul {
 	margin: 0;
 }
 
+#wrapper {
+	position: relative;
+	transition: .3s;
+	right: 0;
+	z-index:1;
+}
+
 .blockLink {
 	display: block;
 }
@@ -78,7 +85,7 @@ header {
 	border-bottom: 1px solid #e9f0f3;
 	z-index: 3;
 	right: 0;
-	transition: .5s;
+	transition: .3s;
 }
 
 header #desktopNav {
@@ -165,16 +172,13 @@ header:hover .navFaderFade a:hover {
 }
 
 ul#mobileNav {
-	z-index:10;
 	background-color: #384047;
 	position: fixed;
 	width: 45%;
-	right: -337px;
+	right: 0px;
 	top: 0;
 	height: 100%;
 	padding: 2px 10px;
-	transition: .5s;
-	transition-timing-function: transition-timing-function: cubic-bezier(0.71, 0.32, 1, 1);
 	display: none;
 }
 
@@ -191,10 +195,6 @@ ul#mobileNav li a {
 
 ul#mobileNav li a:hover {
 	color: #fff;
-}
-
-ul#mobileNav li#mobileSignInRow {
-	background-color: pink;
 }
 
 ul#mobileNav li#mobileSignInRow a {
@@ -223,10 +223,6 @@ ul#mobileNav li:nth-child(2) {
 
 .clearIt {
 	clear: both;
-}
-
-.mobileNavShow {
-	right: 0 !important;
 }
 
 #hamburger {
@@ -303,8 +299,6 @@ main {
 	top: 80px;
 	right: 0;
 	transition: .5s;
-	transition-timing-function: cubic-bezier(0.71, 0.32, 1, 1);
-	transition-delay: .5s;
 }
 
 #hero {
@@ -358,6 +352,10 @@ input {
 	height: 44px;
 	outline: none !important;
 	transition: none;
+}
+
+section {
+	background-color: #fff;
 }
 
 section#howItWorks {
@@ -590,6 +588,7 @@ section#plans .planBlock .btnGreen {
 footer {
 	text-align: center;
 	padding: 100px 0 10px;
+	background-color: #fff;
 }
 
 footer .handLogo {
@@ -731,7 +730,7 @@ footer ul#socialIcons li a .fa {
 		top: 51px;
 	}
 
-	.mainPush {
+	.wrapperPush {
 		right: 45% !important;
 	}
 
@@ -797,7 +796,6 @@ footer ul#socialIcons li a .fa {
 @media screen and (max-width: 520px) {
 	ul#mobileNav {
 		width: 80%;
-		right: -415px;
 	}
 
 	#getStartedBlock .btnGreen {
@@ -805,7 +803,7 @@ footer ul#socialIcons li a .fa {
 		display: block;
 	}
 
-	.mainPush, .headerPush {
+	.wrapperPush, .headerPush {
 		right: 80% !important;
 	}
 
