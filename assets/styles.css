@@ -293,6 +293,7 @@ main {
 	top: 80px;
 	right: 0;
 	transition: .5s;
+	z-index: 1;
 }
 
 #hero {
