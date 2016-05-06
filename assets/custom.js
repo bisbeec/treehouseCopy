@@ -6,7 +6,7 @@ $(window).scroll(function() {
         $("#logoBlocker").addClass("logoBlockerTransparent");
         $("#freeTrialLink").addClass("freeTrialLinkBordered");
         $( ".navFader" ).addClass("navFaderFade");
-        $( "#freeTrialMobileCenter" ).addClass("show");
+        $( "#freeTrialMobileCenter" ).addClass("freeTrialMobileShow");
     }
 });
 
@@ -18,7 +18,7 @@ $(window).scroll(function() {
         $("#logoBlocker").removeClass("logoBlockerTransparent");
         $("#freeTrialLink").removeClass("freeTrialLinkBordered");
         $( ".navFader" ).removeClass("navFaderFade");
-        $( "#freeTrialMobileCenter" ).removeClass("show");
+        $( "#freeTrialMobileCenter" ).removeClass("freeTrialMobileShow");
     }
 });
 
@@ -29,5 +29,5 @@ $("#hamburger").click(function() {
     $("#barOne").toggleClass("barOneEffect");
     $("#barTwo").toggleClass("barTwoEffect");
     $("#barThree").toggleClass("barThreeEffect");
-    $("#freeTrialMobileCenter").removeClass("show");
+    $("#freeTrialMobileCenter").toggleClass("hide");
 })
